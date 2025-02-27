@@ -1,11 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Naturals Shield Cosmetics - Home</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./assets/scripts/script.js" defer></script>
 </head>
-<body>
-    
+
+<body id="top">
+    <!-- Header -->
+        <nav>
+            <!-- <div class="logo">
+                <img src="./assets/images/logo.png" width="179" height="26" alt="Naturals Shield Cosmetics Logo">
+            </div> -->
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <a href="./index.html" class="logo"> <h2>Naturals Shield Cosmetics</h2></a>
+
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#about-innovator">Innovator</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+   
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pure Essence Powder</h1>
+            <p>Stay fresh and confident with our 100% natural deodorant powder.</p>
+            <a href="#catalog" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section id="product" class="about-product">
+        <h2>About Pure Essence Powder</h2>
+        <p>Our Pure Essence Powder is crafted from natural ingredients like plantain leaves, alum, and lime. It’s
+            designed to help you stay fresh and confident all day long.</p>
+        <h3>Benefits</h3>
+        <ul>
+            <li>100% natural and eco-friendly.</li>
+            <li>Safe for all skin types.</li>
+            <li>Effective against body odor.</li>
+        </ul>
+    </section>
+    <!-- About Innovator Section -->
+    <section id="about-innovator" class="about-innovator">
+        <h2>About Ama Benya</h2>
+        <img src="../assets/images/innovator.png" alt="Ama Benya">
+        <p>Ama Benya is a young entrepreneur from Cape Coast, Ghana, who is passionate about solving the problem of body
+            odor in her community. Her natural deodorant is made from locally sourced ingredients and empowers
+            adolescents to live confidently.</p>
+    </section>
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <h2>Product Catalog</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../assets/images/product.png" alt="Pure Essence Powder">
+                <h3>Pure Essence Powder</h3>
+                <p>₵20.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../assets/images/product.png" alt="Pure Essence Powder">
+                <h3>Pure Essence Powder</h3>
+                <p>₵20.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../assets/images/product.png" alt="Pure Essence Powder">
+                <h3>Pure Essence Powder</h3>
+                <p>₵20.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../assets/images/product.png" alt="Pure Essence Powder">
+                <h3>Pure Essence Powder</h3>
+                <p>₵20.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Repeat for other products -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Blog & Resources</h2>
+        <div class="blog-post">
+            <h3>Why Choose Natural Deodorants?</h3>
+            <p>Learn why natural deodorants are better for your skin and the environment.</p>
+        </div>
+        <div class="blog-post">
+            <h3>How to Stay Fresh All Day</h3>
+            <p>Tips and tricks for maintaining freshness with Pure Essence Powder.</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-card">
+            <p>"This product is amazing! It keeps me fresh all day."</p>
+            <p>- Jane Doe</p>
+        </div>
+        <div class="review-card">
+            <p>"I love how natural and effective it is. Highly recommend!"</p>
+            <p>- John Smith</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@naturalshield.com</p>
+            <p><strong>Phone:</strong> +233 123 456 789</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Naturals Shield Cosmetics. All rights reserved.</p>
+            <!-- <ul class="footer-links">
+                <li><a href="about-product.html">About the Product</a></li>
+                <li><a href="about-innovator.html">About the Innovator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> -->
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Subscribe to our newsletter" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 </body>
+
 </html>
