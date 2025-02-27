@@ -19,6 +19,8 @@ a {
 /* Header */
 nav {
   position: fixed;
+      width: 100vw;
+      height: 70px;
   background: #4CAF50;
   color: white;
   padding: 1rem 2rem;
