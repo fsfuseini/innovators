@@ -162,7 +162,14 @@ nav {
   max-width: 100%;
   height: auto;
 }
-
+.add-to-cart {
+  background: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* Customer Reviews Section */
 .reviews {
   padding: 4rem 2rem;
