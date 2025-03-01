@@ -1,60 +1,24 @@
-
-//Shopping Cart Functionality
-let cart = [];
-
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', () => {
-        const product = {
-            id: button.dataset.id,
-            name: button.dataset.name,
-            price: parseFloat(button.dataset.price),
-            quantity: 1
-        };
-
-        const existingItem = cart.find(item => item.id === product.id);
-        if (existingItem) {
-            existingItem.quantity += 1;
-        } else {
-            cart.push(product);
-        }
-
-        updateCart();
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
-function updateCart() {
-    const cartItems = document.querySelector('.cart-items');
-    const cartTotal = document.getElementById('cart-total');
+// Hamburger Menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
-    cartItems.innerHTML = '';
-    let total = 0;
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
-    cart.forEach(item => {
-        const cartItem = document.createElement('div');
-        cartItem.classList.add('cart-item');
-        cartItem.innerHTML = `
-      <span>${item.name} (${item.quantity})</span>
-      <span>₵${(item.price * item.quantity).toFixed(2)}</span>
-      <button onclick="removeFromCart('${item.id}')">Remove</button>
-    `;
-        cartItems.appendChild(cartItem);
-
-        total += item.price * item.quantity;
-    });
-
-    cartTotal.textContent = total.toFixed(2);
-}
-
-function removeFromCart(id) {
-    cart = cart.filter(item => item.id !== id);
-    updateCart();
-}
-
-
-// Back-to-Top Button Functionality
+// Back-to-Top Button
 const backToTopButton = document.getElementById('back-to-top');
 
-// Show the button when the user scrolls down 200px
 window.onscroll = function () {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         backToTopButton.style.display = 'block';
@@ -63,10 +27,9 @@ window.onscroll = function () {
     }
 };
 
-// Scroll to the top when the button is clicked
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Smooth scrolling
+        behavior: 'smooth'
     });
 });
