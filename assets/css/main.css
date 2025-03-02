@@ -184,6 +184,124 @@ nav {
   text-align: left;
 }
 
+/* Blog/Resource Center Section */
+.blog {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  /* Light background */
+}
+
+.blog h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.blog-post {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Social Media & Newsletter Section */
+.social-media {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+}
+
+.social-media h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-media-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #f0f0f0;
+  /* Lighten color on hover */
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newsletter-form input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  background: white;
+  color: #4CAF50;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #f0f0f0;
+  /* Lighten background on hover */
+}
+
 /* Contact Section */
 .contact {
   padding: 4rem 2rem;
@@ -218,7 +336,7 @@ nav {
   cursor: pointer;
 }
 
-/* Responsive Design for Header */
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
 
   .logo h1 {
@@ -259,6 +377,31 @@ nav {
 .product-grid {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
+.blog-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.blog-post h3 {
+  font-size: 1.2rem;
+}
+
+.blog-post p {
+  font-size: 0.9rem;
+}
+
+ .social-links {
+   gap: 1rem;
+ }
+
+ .newsletter-form {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .newsletter-form input {
+   width: 100%;
+ }
 }
 
 /* Footer */
