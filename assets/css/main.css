@@ -6,7 +6,10 @@ body {
   box-sizing: border-box;
   color: #333;
 }
-
+body::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and Opera */
+}
 h1,
 h2,
 h3 {
