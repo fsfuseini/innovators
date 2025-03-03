@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./assets/scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -25,11 +26,8 @@
       <!-- Navigation Links -->
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <!-- <li><a href="#about-innovator">Innovator</a></li> -->
+        <li><a href="#about-product">About</a></li>
         <li><a href="#catalog">Products</a></li>
-        <!-- <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#blog">Blog</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -44,24 +42,39 @@
     </div>
   </section>
 
+
   <!-- About the Product Section -->
-  <section id="about" class="about-product">
+  <section id="about-product" class="about-product">
     <h2>About the Product</h2>
-    <p>Our Pure Essence Powder is crafted from natural ingredients like plantain leaves, alum, and lime. It’s designed to help you stay fresh and confident all day long.</p>
-    <h3>Benefits</h3>
-    <ul>
-      <li>100% natural and eco-friendly.</li>
-      <li>Safe for all skin types.</li>
-      <li>Effective against body odor.</li>
-    </ul>
-    <!-- About the Innovator Section -->
-    <div id="about-innovator" class="about-innovator">
-      <h2>About the Innovator</h2>
-      <img src="./assets/images/innovator.png" alt="Ama Benya">
-      <p>Ama Benyah is a young entrepreneur from Cape Coast, Ghana, who is passionate about solving the problem of body odor in her community. Her natural deodorant is made from locally sourced ingredients and empowers adolescents to live confidently.</p>
+    <div class="about-product-content">
+      <!-- Product Image -->
+      <div class="product-image">
+        <img src="./assets/images/product.png" alt="Pure Essence Powder">
+      </div>
+      <!-- Product Text -->
+      <div class="product-text">
+        <h3>Pure Essence Powder</h3>
+        <p>Our Pure Essence Powder is crafted from natural ingredients like plantain leaves, alum, and lime. It’s
+          designed
+          to help you stay fresh and confident all day long.</p>
+        <h3>Benefits</h3>
+        <ul>
+          <li>100% natural and eco-friendly.</li>
+          <li>Safe for all skin types.</li>
+          <li>Effective against body odor.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
+  <!-- About the Innovator Section -->
+  <section id="about-innovator" class="about-innovator">
+    <h2>About the Innovator</h2>
+    <img src="./assets/images/innovator.png" alt="Ama Benya">
+    <p>Ama Benyah is a young entrepreneur from Cape Coast, Ghana, who is passionate about solving the problem of body
+      odor in her community. Her natural deodorant is made from locally sourced ingredients and empowers adolescents to
+      live confidently.</p>
+  </section>
 
   <!-- Catalog Section -->
   <section id="catalog" class="catalog">
@@ -97,13 +110,19 @@
   <!-- Customer Reviews Section -->
   <section id="reviews" class="reviews">
     <h2>Customer Reviews</h2>
-    <div class="review-card">
-      <p>"This product is amazing! It keeps me fresh all day."</p>
-      <p>- Jane Doe</p>
-    </div>
-    <div class="review-card">
-      <p>"I love how natural and effective it is. Highly recommend!"</p>
-      <p>- John Smith</p>
+    <div class="review-grid">
+      <div class="review-card">
+        <p>"This product is amazing! It keeps me fresh all day."</p>
+        <p class="customer">- Jane Doe</p>
+      </div>
+      <div class="review-card">
+        <p>"I love how natural and effective it is. Highly recommend!"</p>
+        <p class="customer">- John Smith</p>
+      </div>
+      <div class="review-card">
+        <p>"This product is by far the best I've ever used. I'm so glad I found it!"</p>
+        <p class="customer">- Joan Smart</p>
+      </div>
     </div>
   </section>
 
@@ -170,14 +189,17 @@
 
   <!-- Footer -->
   <footer>
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#catalog">Products</a></li>
+    </ul>
     <div class="footer-content">
       <p><span>&copy; 2025 Naturals Shield Cosmetics. </span><span>All rights reserved.</span></p>
     </div>
   </footer>
 
-  <!-- Back-to-Top Button -->
-  <button id="back-to-top" title="Go to top">↑</button>
-  <script src="./assets/scripts/script.js"></script>
 </body>
 
 </html>

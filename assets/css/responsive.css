@@ -45,13 +45,16 @@
         font-size: 1rem;
     }
 
-    #about p {
-        text-align: justify;
-    }
-
-    .about-innovator h2{
-        font-size: 1.5rem;
-    }
+    /* About Product */
+        .about-product-content {
+            flex-direction: column;
+            /* Stack image and text vertically */
+        }
+    
+        .product-text {
+            text-align: center;
+            /* Center text on smaller screens */
+        }
     /* Product Catalog */
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

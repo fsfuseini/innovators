@@ -26,21 +26,3 @@ document.getElementById('newsletter-form').addEventListener('submit', function (
     alert(`Thank you for subscribing, ${email}!`);
     document.getElementById('newsletter-form').reset(); // Clear the form
 });
-
-// Back-to-Top Button
-const backToTopButton = document.getElementById('back-to-top');
-
-window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTopButton.style.display = 'block';
-    } else {
-        backToTopButton.style.display = 'none';
-    }
-};
-
-backToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
