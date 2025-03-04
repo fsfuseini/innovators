@@ -63,6 +63,23 @@ nav {
   cursor: pointer;
 }
 
+.hamburger .hamburger-icon,
+.hamburger .close-icon {
+  display: inline-block;
+}
+
+.hamburger .close-icon {
+  display: none;
+}
+
+.hamburger.active .hamburger-icon {
+  display: none;
+}
+
+.hamburger.active .close-icon {
+  display: inline-block;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -91,9 +108,16 @@ nav {
   color: white;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .hero-content h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
 .cta-button {
@@ -102,6 +126,8 @@ nav {
   padding: 1rem 2rem;
   border-radius: 5px;
   font-size: 1.2rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 /* About the Product Section */
@@ -232,7 +258,8 @@ nav {
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.customer{
+
+.customer {
   color: #4CAF50;
   font-weight: bold;
 }
