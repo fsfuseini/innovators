@@ -9,7 +9,9 @@
     .logo p {
         font-size: 13px;
     }
-
+.logo img {
+    height: 30px;
+}
     .hamburger {
         display: block;
     }
