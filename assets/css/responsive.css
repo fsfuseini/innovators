@@ -23,7 +23,7 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #4CAF50;
+        background-color: #ffffff;
         padding: 1rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -32,6 +32,24 @@
         display: flex;
     }
     
+        /* Ensure scrolled styles apply in responsive mode */
+        header.scrolled .logo img {
+            filter: brightness(0) invert(1);
+            /* Change logo to black */
+        }
+    header.scrolled .nav-links{
+        background-color: #4CAF50;
+    }
+        header.scrolled .nav-links a {
+            color: #ffffff;
+            /* Change text color */
+        }
+    
+        header.scrolled .hamburger span {
+            color: #ffffff;
+            /* Change hamburger icon color */
+        }
+        
     /* Hero */
     .hero {
         height: 50vh;

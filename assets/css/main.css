@@ -45,6 +45,30 @@ nav {
 
 .logo img{
   height: 50px;
+  transition: filter 0.3s;
+}
+
+/* Navbar and Nav-Links Scrolled State */
+header.scrolled {
+  background: #4CAF50;
+  /* Change background color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Add shadow */
+}
+
+header.scrolled .logo img {
+  filter: brightness(0) invert(1);
+  /* Change logo to black */
+}
+
+header.scrolled .nav-links a {
+  color: #ffffff;
+  /* Change text color */
+}
+
+header.scrolled .hamburger span {
+  color: #ffffff;
+  /* Change hamburger icon color */
 }
 
 .hamburger {
@@ -87,6 +111,7 @@ nav {
 .nav-links a:hover {
   text-decoration: underline;
 }
+
 
 /* Hero Section */
 .hero {
