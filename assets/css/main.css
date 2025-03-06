@@ -43,7 +43,7 @@ nav {
   margin: 0 auto;
 }
 
-.logo img{
+.logo img {
   height: 50px;
   transition: filter 0.3s;
 }
@@ -150,7 +150,7 @@ header.scrolled .hamburger span {
 .about-product {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #ffffff
+  background-color: #f9f9f9;
 }
 
 .about-product h2 {
@@ -158,16 +158,23 @@ header.scrolled .hamburger span {
   margin-bottom: 2rem;
 }
 
+.about-product h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5;
+}
+
 .about-product-content {
   display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 .product-image img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -175,11 +182,45 @@ header.scrolled .hamburger span {
   flex: 1;
 }
 
-.benefits-list{
-display: grid;
+.product-intro {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-list {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   gap: 8px;
+}
+
+.benefits-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.benefits-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .product-text h3 {
@@ -213,25 +254,26 @@ display: grid;
 
 .about-innovator-content {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
-.innovator-text{
+.innovator-text {
   display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
 }
-.text-card{
+
+.text-card {
   background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1.5rem;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .text-card h3 {
@@ -248,7 +290,7 @@ display: grid;
 }
 
 
-.about-innovator img {
+.innovator-image img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
