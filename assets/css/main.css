@@ -150,7 +150,7 @@ header.scrolled .hamburger span {
 .about-product {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #ffffff
 }
 
 .about-product h2 {
@@ -159,16 +159,9 @@ header.scrolled .hamburger span {
 }
 
 .about-product-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 2rem;
-}
-
-.product-image {
-  flex: 1;
+  display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
 .product-image img {
@@ -180,7 +173,13 @@ header.scrolled .hamburger span {
 
 .product-text {
   flex: 1;
-  text-align: left;
+}
+
+.benefits-list{
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
 }
 
 .product-text h3 {
@@ -189,12 +188,12 @@ header.scrolled .hamburger span {
   margin-bottom: 1rem;
 }
 
-.product-text ul {
+.product-benefits ul {
   list-style: none;
   padding: 0;
 }
 
-.product-text ul li {
+.product-benefits ul li {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: #555;
@@ -213,74 +212,48 @@ header.scrolled .hamburger span {
 }
 
 .about-innovator-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 2rem;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
-.innovator-image {
-  flex: 1;
+.innovator-text{
+  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+.text-card{
+  background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.innovator-text {
-  flex: 1;
-  text-align: justify;
-}
-
-.innovator-text h3 {  
+.text-card h3 {
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.innovator-text p {
+.text-card p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
+  text-align: justify;
 }
+
+
 .about-innovator img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Product Catalog Section */
-.catalog {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.product-card {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.product-card img {
-  max-width: 100%;
-  height: auto;
-}
-
-.add-to-cart {
-  background: #4CAF50;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 /* Customer Reviews Section */
