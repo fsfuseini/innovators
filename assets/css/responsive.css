@@ -9,9 +9,11 @@
     .logo p {
         font-size: 13px;
     }
-.logo img {
-    height: 30px;
-}
+
+    .logo img {
+        height: 30px;
+    }
+
     .hamburger {
         display: block;
     }
@@ -31,25 +33,27 @@
     .nav-links.active {
         display: flex;
     }
-    
-        /* Ensure scrolled styles apply in responsive mode */
-        header.scrolled .logo img {
-            filter: brightness(0) invert(1);
-            /* Change logo to black */
-        }
-    header.scrolled .nav-links{
+
+    /* Ensure scrolled styles apply in responsive mode */
+    header.scrolled .logo img {
+        filter: brightness(0) invert(1);
+        /* Change logo to black */
+    }
+
+    header.scrolled .nav-links {
         background-color: #4CAF50;
     }
-        header.scrolled .nav-links a {
-            color: #ffffff;
-            /* Change text color */
-        }
-    
-        header.scrolled .hamburger span {
-            color: #ffffff;
-            /* Change hamburger icon color */
-        }
-        
+
+    header.scrolled .nav-links a {
+        color: #ffffff;
+        /* Change text color */
+    }
+
+    header.scrolled .hamburger span {
+        color: #ffffff;
+        /* Change hamburger icon color */
+    }
+
     /* Hero */
     .hero {
         height: 50vh;
@@ -66,13 +70,30 @@
     }
 
     /* About Product */
-        .about-product-content {
-            flex-direction: column;
-        }
-    
-        .product-text {
-            text-align: center;
-        }
+    .about-product-content {
+        flex-direction: column;
+    }
+
+    .product-text {
+        text-align: center;
+    }
+
+    .product-text p {
+        text-align: justify;
+    }
+    .about-innovator-content {
+        flex-direction: column;
+    }
+
+    .innovator-text {
+        text-align: center;
+    }
+.innovator-text p {
+    text-align: justify;
+}
+    .innovator-image {
+        margin-top: 2rem;
+    }
     /* Product Catalog */
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

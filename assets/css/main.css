@@ -204,6 +204,7 @@ header.scrolled .hamburger span {
 .about-innovator {
   padding: 4rem 2rem;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .about-innovator h2 {
@@ -211,11 +212,41 @@ header.scrolled .hamburger span {
   margin-bottom: 1rem;
 }
 
+.about-innovator-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.innovator-image {
+  flex: 1;
+}
+
+.innovator-text {
+  flex: 1;
+  text-align: justify;
+}
+
+.innovator-text h3 {  
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.innovator-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
 .about-innovator img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Product Catalog Section */
