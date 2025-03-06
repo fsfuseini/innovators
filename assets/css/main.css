@@ -58,7 +58,6 @@ header.scrolled {
 
 header.scrolled .logo img {
   filter: brightness(0) invert(1);
-  /* Change logo to black */
 }
 
 header.scrolled .nav-links a {
