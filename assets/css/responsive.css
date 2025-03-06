@@ -70,56 +70,7 @@
     }
 
     /* About Product */
-   /* Responsive styles for .about-product */
-
-   /* For screens with a maximum width of 768px */
-   @media (max-width: 768px) {
-       .about-product {
-           padding: 2rem 1rem;
-       }
-
-       .about-product h2 {
-           font-size: 1.5rem;
-           margin-bottom: 1rem;
-       }
-
-       .about-product-content {
-           grid-template-columns: 1fr;
-           gap: 10px;
-       }
-
-       .product-image img {
-           max-width: 100%;
-           height: auto;
-           border-radius: 5px;
-           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-       }
-
-       .product-text {
-           flex: 1;
-       }
-
-       .benefits-list {
-           grid-template-columns: repeat(2, 1fr);
-           grid-template-rows: repeat(1, 1fr);
-           gap: 5px;
-       }
-
-       .product-text h3 {
-           font-size: 1.2rem;
-           margin-top: 0.5rem;
-           margin-bottom: 0.5rem;
-       }
-
-       .product-benefits ul li {
-           margin-bottom: 0.2rem;
-           font-size: 0.9rem;
-       }
-   }
-
-   /* For screens with a maximum width of 480px */
-   @media (max-width: 480px) {
-       .about-product {
+    .about-product {
            padding: 1rem 0.5rem;
        }
 
@@ -136,7 +87,7 @@
        .product-image img {
            max-width: 100%;
            height: auto;
-           border-radius: 3px;
+           border-radius: 5px;
            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
        }
 
@@ -160,7 +111,8 @@
            margin-bottom: 0.1rem;
            font-size: 0.8rem;
        }
-   }
+
+  
     /* Blog */
     .blog h2 {
         font-size: 1.5rem;
