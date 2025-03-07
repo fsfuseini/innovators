@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 
+
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -51,9 +52,7 @@ nav {
 /* Navbar and Nav-Links Scrolled State */
 header.scrolled {
   background: #4CAF50;
-  /* Change background color */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  /* Add shadow */
 }
 
 header.scrolled .logo img {
@@ -62,12 +61,10 @@ header.scrolled .logo img {
 
 header.scrolled .nav-links a {
   color: #ffffff;
-  /* Change text color */
 }
 
 header.scrolled .hamburger span {
   color: #ffffff;
-  /* Change hamburger icon color */
 }
 
 .hamburger {
@@ -121,14 +118,28 @@ header.scrolled .hamburger span {
   justify-content: center;
   text-align: center;
   color: white;
+  position: relative;
 }
 
+/* Overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2
 }
 
 .hero-content h1 {
@@ -219,7 +230,7 @@ header.scrolled .hamburger span {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .product-text h3 {
@@ -279,11 +290,12 @@ header.scrolled .hamburger span {
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: #4CAF50;
 }
 
 .text-card p {
   font-size: 1rem;
-  color: #555;
+  color: #000000;
   margin-bottom: 1rem;
   text-align: justify;
 }
