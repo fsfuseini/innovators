@@ -128,7 +128,7 @@ header.scrolled .hamburger span {
 
 /* Hero Section */
 .hero {
-  background: url('../images/hero.jpg') no-repeat center center/cover;
+  background: url('../images/flatlay-of-various-natural-homem.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -162,6 +162,7 @@ header.scrolled .hamburger span {
 
 .hero-content h1{
   font-size: 3.5rem;
+  color: #beeac5;
 }
 
 .hero-content p {
@@ -179,6 +180,7 @@ header.scrolled .hamburger span {
 
 /* About the Product Section */
 .about-product {
+  margin-top: 2rem;
   padding: 2rem;
   text-align: center;
   background-color: #f9f9f9;
@@ -212,6 +214,7 @@ header.scrolled .hamburger span {
   padding: 1.5rem;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .benefits-list {
@@ -464,6 +467,7 @@ header.scrolled .hamburger span {
 
 .contact-form button {
   background: #4CAF50;
+  font-size: 1.2rem;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
