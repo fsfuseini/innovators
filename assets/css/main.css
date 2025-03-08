@@ -19,11 +19,28 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-family: 'madimi one';
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 a {
+  font-family: 'madimi one';
+  font-size: 1.2rem;
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  font-family: 'Magra';
 }
 
 /* Header */
@@ -101,7 +118,7 @@ header.scrolled .hamburger span {
 .nav-links a {
   color: #4CAF50;
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .nav-links a:hover {
@@ -132,6 +149,7 @@ header.scrolled .hamburger span {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -142,10 +160,13 @@ header.scrolled .hamburger span {
   z-index: 2
 }
 
-.hero-content h1 {
-  font-size: 3rem;
+.hero-content h1{
+  font-size: 3.5rem;
 }
 
+.hero-content p {
+  font-size: 1.2rem;
+}
 .cta-button {
   background: #4CAF50;
   color: white;
@@ -158,20 +179,12 @@ header.scrolled .hamburger span {
 
 /* About the Product Section */
 .about-product {
-  padding: 4rem 2rem;
+  padding: 2rem;
   text-align: center;
   background-color: #f9f9f9;
 }
 
-.about-product h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
 
-.about-product h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5;
-}
 
 .about-product-content {
   display: grid;
@@ -233,11 +246,6 @@ header.scrolled .hamburger span {
   text-align: left;
 }
 
-.product-text h3 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
 .product-benefits ul {
   list-style: none;
@@ -252,15 +260,11 @@ header.scrolled .hamburger span {
 
 /* About Innovator Section */
 .about-innovator {
-  padding: 4rem 2rem;
+  padding: 2rem;
   text-align: center;
   background-color: #f9f9f9;
 }
 
-.about-innovator h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
 
 .about-innovator-content {
   display: grid;
@@ -277,6 +281,9 @@ header.scrolled .hamburger span {
   grid-row-gap: 10px;
 }
 
+.innovator-text h3{
+  color: #337b01;
+}
 .text-card {
   background: white;
   border: 1px solid #ddd;
@@ -284,13 +291,6 @@ header.scrolled .hamburger span {
   padding: 1.5rem;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.text-card h3 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #4CAF50;
 }
 
 .text-card p {
@@ -310,7 +310,7 @@ header.scrolled .hamburger span {
 
 /* Customer Reviews Section */
 .reviews {
-  padding: 4rem 2rem;
+  padding: 2rem;
   text-align: center;
   background-color: #f9f9f9;
 }
@@ -333,19 +333,14 @@ header.scrolled .hamburger span {
 
 .customer {
   color: #4CAF50;
-  font-weight: bold;
+  font-family: 'madimi one';
 }
 
 /* Blog/Resource Center Section */
 .blog {
-  padding: 4rem 2rem;
+  padding: 2rem;
   text-align: center;
   background-color: #f9f9f9;
-}
-
-.blog h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
 }
 
 .blog-grid {
@@ -364,14 +359,10 @@ header.scrolled .hamburger span {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.blog-post h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
 
 .blog-post p {
   font-size: 1rem;
-  color: #555;
+  /* color: #555; */
 }
 
 .read-more {
@@ -379,7 +370,7 @@ header.scrolled .hamburger span {
   margin-top: 1rem;
   color: #4CAF50;
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .read-more:hover {
@@ -392,11 +383,6 @@ header.scrolled .hamburger span {
   text-align: center;
   background-color: #4CAF50;
   color: white;
-}
-
-.social-media h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
 }
 
 .social-media-content {
@@ -418,7 +404,7 @@ header.scrolled .hamburger span {
 }
 
 .social-icon:hover {
-  color: #333;
+  color: #2f5233;
 }
 
 .newsletter-form {
@@ -447,13 +433,13 @@ header.scrolled .hamburger span {
 }
 
 .newsletter-form button:hover {
-  background: #333;
+  background: #2f5233;
   color: white;
 }
 
 /* Contact Section */
 .contact {
-  padding: 4rem 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -487,7 +473,7 @@ header.scrolled .hamburger span {
 
 /* Footer */
 footer {
-  background: #333;
+  background: #2f5233;
   color: white;
   padding: 1rem 2rem;
   text-align: center;
