@@ -285,12 +285,15 @@ header.scrolled .hamburger span {
 }
 
 .innovator-text h3{
-  color: #337b01;
+  /* color: #337b01; */
+  font-size: 2rem;
 }
 .text-card {
-  background: white;
+  background: #337b01;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  border-radius: 1rem;
   padding: 1.5rem;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -298,7 +301,7 @@ header.scrolled .hamburger span {
 
 .text-card p {
   font-size: 1rem;
-  color: #000000;
+  /* color: #000000; */
   margin-bottom: 1rem;
   text-align: justify;
 }
