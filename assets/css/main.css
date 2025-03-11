@@ -20,6 +20,7 @@ h2,
 h3 {
   margin: 0;
   font-family: 'madimi one';
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -265,7 +266,8 @@ header.scrolled .hamburger span {
 .about-innovator {
   padding: 2rem;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #337b01;
+  color: #ffffff;
 }
 
 
@@ -289,7 +291,7 @@ header.scrolled .hamburger span {
   font-size: 2rem;
 }
 .text-card {
-  background: #337b01;
+  /* background: #337b01; */
   border: 1px solid #ddd;
   color: #ffffff;
   font-family: 'Roboto';
