@@ -181,7 +181,7 @@ header.scrolled .hamburger span {
 
 /* About the Product Section */
 .about-product {
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
   padding: 2rem;
   text-align: center;
   background-color: #f9f9f9;
